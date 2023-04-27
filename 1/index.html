@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 370px;
+            height: 500px;
+            margin: 0 auto;
+            background-image: url('phone.png');
+            background-position: center;
+            background-size: cover;
+            margin-top: 50px;
+            position: relative;
+        }
+
+        .block_green,
+        .block_black {
+            top: 10px;
+            left: 50px;
+            position: absolute;
+            width: 210px;
+            background-color: green;
+            height: 440px;
+            border-radius: 20px;
+            z-index: 2;
+        }
+
+        .block_black {
+            background-color: black;
+            position: absolute;
+            height: 0;
+            z-index: 3;
+            
+        }
+
+        .text {
+            position: absolute;
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            padding: 10px;
+            top: 180px;
+            left: 0;
+            right: 55px;
+            color: #fff;
+            z-index: 5;
+        }
+
+        h1 {
+            margin-bottom: 15px;
+            font-size: 52px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>2</h1>
+            <p>minute</p>
+        </div>
+        <div class="block_green"></div>
+        <div class="block_black"></div>
+    </div>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
